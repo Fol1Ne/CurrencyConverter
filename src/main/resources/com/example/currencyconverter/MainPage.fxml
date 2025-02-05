@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.currencyconverter.Controller">
+   <children>
+      <TextField fx:id="amountField" layoutX="14.0" layoutY="29.0" prefHeight="40.0" prefWidth="270.0" promptText="0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="resetAmountButton" layoutX="296.0" layoutY="29.0" mnemonicParsing="false" onAction="#resetAmount" prefHeight="40.0" prefWidth="40.0" text="R" />
+      <Text layoutX="15.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="convertCurrencyButton" layoutX="25.0" layoutY="240.0" mnemonicParsing="false" onAction="#convertCurrency" prefHeight="40.0" prefWidth="300.0" text="Convert">
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="resultLabel" alignment="CENTER" layoutX="15.0" layoutY="310.0" prefHeight="40.0" prefWidth="320.0">
+         <font>
+            <Font name="Calibri" size="20.0" />
+         </font>
+      </Label>
+      <Text layoutX="15.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="15.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="currencyFrom" layoutX="15.0" layoutY="94.0" prefHeight="50.0" prefWidth="320.0" promptText="Pick a currrency" visibleRowCount="5" />
+      <ComboBox fx:id="currencyTo" layoutX="15.0" layoutY="172.0" prefHeight="50.0" prefWidth="320.0" promptText="Pick a currrency" visibleRowCount="5" />
+   </children>
+</AnchorPane>
